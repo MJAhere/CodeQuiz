@@ -1,3 +1,16 @@
+function Question (title, choices, answer) {
+  this.title = title;
+  this.choices = choices;
+  this.answer = answer;
+}
+
+
+Question.prototype.correctAnswer = function(choices) {
+  return choice === this.answer;
+  
+}
+
+
 var questions = [
     {
       title: "Commonly used data types DO NOT include:",
