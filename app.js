@@ -3,11 +3,11 @@ function populate() {
         showScores();
     }
     else {
-        // show question
+        // question
         var element = document.getElementById("question");
         element.innerHTML = quiz.getQuestionIndex().text;
 
-        // show options
+        // options
         var choices = quiz.getQuestionIndex().choices;
         for(var i = 0; i < choices.length; i++) {
             var element = document.getElementById("choice" + i);
